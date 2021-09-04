@@ -26,6 +26,8 @@ Partial Class FormMain
         Me.TBConsumerSecret = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.BtnViewPicture = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'TBConsumerKey
@@ -61,11 +63,31 @@ Partial Class FormMain
         Me.BtnViewPicture.Text = "view picture"
         Me.BtnViewPicture.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(23, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(72, 13)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "ConsumerKey"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(26, 55)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(85, 13)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "ConsumerSecret"
+        '
         'FormMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(407, 172)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnViewPicture)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TBConsumerSecret)
@@ -81,4 +103,6 @@ Partial Class FormMain
     Friend WithEvents TBConsumerSecret As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents BtnViewPicture As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class
